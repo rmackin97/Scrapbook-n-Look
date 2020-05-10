@@ -1,10 +1,13 @@
----------- THIS IS MARKDOWN ------------
-<h1>header</h1>
+<h1>What is Scrapbook n' Look?</h1>
 
-will any of this work?
-[www.google.com]
+blah blah blah todo
 
-this is a line --> [google](https://www.google.com)
+<h>How to get started</h1>
 
-<a href="www.google.com">button</a>
----------- THIS IS MARKDOWN ------------
+blah blah blah more todo
+
+<h1>Download Scrapbook n' Look</h1>
+<p>this is a paragraph</p>
+
+you can download scrapbook n' look here [google](https://www.google.com)
+
