@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>New Folder</title>
+        <style>
+            body {
+                background-color: rgb(38,40,42);
+                color: white;
+            }
+
+            .content-wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+                height: 100%;
+                width: 100%;
+            }
+            
+            .message {
+                text-align: center;
+            }
+
+            .btn-container {
+                display: flex;
+                justify-content: flex-end;
+
+                margin-top: 10px;
+            }
+
+            .btn-container input {
+                flex: 1 1 auto;
+                width: 40px;
+
+                text-align: center;
+                
+                margin: 0 10px;
+                padding: 2px;
+
+                border: none;
+                outline: none;
+
+                color: white;
+                background-color: rgb(110, 112,114);
+                border: 1px solid black;
+            }
+
+            .btn-container input:hover {
+                cursor: pointer;
+                background-color: rgb(145, 147,149);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content-wrapper">
+            <div class="message" id="message"></div>
+            <div class="btn-container">
+                <input type="button" value="Okay" onclick="response();"/>
+            </div>
+        </div>    
+
+        <script>
+            // used to communicate between this process and main.js
+            const { ipcRenderer } = require("electron");
+            const queryString = require("query-string");
+
+            let type = queryString.parse(location.search)["type"];
+            let name = queryString.parse(location.search)["name"];
+            let message = "This destination already contains a "+type+" named '"+name+"'.";
+            document.getElementById("message").innerHTML = message;
+
+            function response(){
+                ipcRenderer.send("operation-denied-response");
+            }
+        </script>
+    </body>
+</html>

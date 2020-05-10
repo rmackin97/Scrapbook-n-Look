@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Scrapbook n' Look</title>
+        <link rel="stylesheet" href="css/app.css"/>
+        <link rel="stylesheet" href="css/document-view.css">
+        <link rel="stylesheet" href="css/webpage-view.css">
+        <!-- External JavaScript files -->
+        <script src="../js/render.js"></script>
+    </head>
+    <body>
+        <!-- Document View -->
+        <div class="document-view">
+            <!-- Application title -->
+            <h1>Scrapbook n' Look</h1>
+            
+            <!-- Home view and create New Folder buttons -->
+            <div class="menu-container" id="menu-container">
+                <input class="menu-item" type="button" value="Home" onclick="renderHomeDocumentView()"/>
+                <input class="menu-item" type="button" value="New Folder" onclick="renderNewFolder();"/>
+            </div>
+
+            <!-- Search bar and search options container -->
+            <div class="search-container">
+                <div class="search-options-container">
+                    <select class="search-options-item" id="search-by">
+                        <option selected disabled>Search by</option>
+                        <option id="title">Title</option>
+                        <!-- <option id="tag">Tag</option> -->
+                    </select>
+                    <input class="search-options-item" id="search-options" type="button" value="Tools"
+                        data-searchlocation="all-subfolders" data-searchdate="all-time" onclick="openSearchOptions();"/>
+                </div>
+
+                <form class="search-bar" id="search-bar">
+                    <input id="search-input" type="text" value="" placeholder="Search"/>
+                    <input type="submit" hidden/>
+                </form>
+            </div>
+
+            <!-- Current folder title and folderPath -->
+            <h3 class="directory-name" id="directory-name" data-folderpath="root"></h3>
+
+            <!-- Navigation buttons -->
+            <div class="navigation-container" id="navigation-container">
+                <input class="navigation-item" id="back-btn" type="button" value="Back" onclick="renderPrevDocumentView();"/>
+                <input class="navigation-item" id="close-btn" type="button" value="Close" onclick="renderCurrDocumentView()"/>
+            </div>
+
+            <!-- Folder and Document containers -->
+            <div class="folder-container" id="folder-container"></div>
+            <div class="document-container" id="document-container"></div>
+        </div>
+
+        <!-- Webpage View -->
+        <div class="webpage-view">
+            <div class="tab-container" id="tab-container"></div>
+
+            <div class="webpage-container" id="webpage-container">
+                <webview class="webpage-item" id="webpage-item" src="./default-view.html"></webview>
+            </div>
+        </div>
+
+        <!-- Execute Javascript -->
+        <script>
+            renderDocumentView("root");
+
+            searchHandler(document.getElementById("search-bar"));
+            backDropHandler(document.getElementById("back-btn"));
+
+            //startDocumentWatcher();
+            startContextMenuListener();
+        </script>
+    </body>
+</html>

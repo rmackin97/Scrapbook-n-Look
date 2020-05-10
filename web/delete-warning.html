@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>New Folder</title>
+        <style>
+            body {
+                background-color: rgb(38,40,42);
+                color: white;
+            }
+
+            .content-wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+                height: 100%;
+                width: 100%;
+            }
+
+            .message {
+                text-align: center;
+            }
+
+            .btn-container {
+                display: flex;
+                justify-content: space-between;
+
+                margin-top: 10px;
+            }
+
+            .btn-container input {
+                flex: 1 1 auto;
+                width: 40px;
+
+                text-align: center;
+
+                margin: 0 10px;
+                padding: 2px;
+
+                border: none;
+                outline: none;
+
+                color: white;
+                background-color: rgb(110, 112,114);
+                border: 1px solid black;
+            }
+
+            .btn-container input:hover {
+                cursor: pointer;
+                background-color: rgb(145, 147,149);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content-wrapper">
+            <div class="message" id="message"></div>
+            <div class="btn-container">
+                <input type="button" value="Yes" onclick="response(true);"/>
+                <input type="button" value="No" onclick="response(false);"/>
+            </div>
+        </div>
+        
+
+        <script>
+            // used to communicate between this process and main.js
+            const { ipcRenderer } = require("electron");
+            const queryString = require("query-string");
+
+            let type = queryString.parse(location.search)["type"];
+            let name = queryString.parse(location.search)["name"];
+
+            let message;
+            if(type == "folder"){
+                message = "Are you sure you want to permanently delete this folder and all of its contents?"
+            } else{
+                message = "Are you sure you want to permanently delete this document?"
+            }
+            //let message = "Are you sure you want to permanently delete the "+type+" named '"+name+"'?";
+            document.getElementById("message").innerHTML = message;
+
+            function response(res){
+                ipcRenderer.send("delete-warning-response", res);
+            }
+        </script>
+    </body>
+</html>

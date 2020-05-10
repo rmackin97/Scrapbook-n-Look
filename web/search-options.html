@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <style>
+            body {
+                background-color: rgb(38,40,42);
+                color: white;
+            }
+
+            .content-wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+                height: 100%;
+                width: 100%;
+            }
+
+            .container {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .close-btn {
+                width: 40px;
+
+                text-align: center;
+
+                margin: 0 10px;
+                padding: 2px;
+
+                border: none;
+                outline: none;
+
+                color: white;
+                background-color: rgb(110, 112,114);
+                border: 1px solid black;
+            }
+
+            .close-btn:hover {
+                cursor: pointer;
+                background-color: rgb(145, 147,149);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content-wrapper">
+            <h3>Advanced Search Options</h3>
+            <div class="container">
+                <form class="option-item" id="search-location">
+                    <label>Search location</label><br/>
+                    <input type="radio" name="search-location" id="all-subfolders">
+                    <label for="all-subfolders">All subfolders</label><br/>
+                    <input type="radio" name="search-location" id="current-folder">
+                    <label for="current-folder">Current folder</label><br/>
+                    <input type="radio" name="search-location" id="all-documents">
+                    <label for="all-documents">All documents</label><br/>
+                </form>
+                <form class="option-item" id="search-date">
+                    <label>Date last viewed</label><br/>
+                    <input type="radio" name="search-date" id="all-time">
+                    <label for="all-time">All time</label><br/>
+                    <input type="radio" name="search-date" id="today">
+                    <label for="today">Today</label><br/>
+                    <input type="radio" name="search-date" id="this-week">
+                    <label for="this-week">This week</label><br/>
+                    <input type="radio" name="search-date" id="this-month">
+                    <label for="this-month">This month</label><br/>
+                    <input type="radio" name="search-date" id="this-year">
+                    <label for="this-year">This year</label><br/>
+                </form>
+            </div>  
+            <input class="close-btn" type="button" value="Okay" onclick="response();">
+        </div>
+
+        <script>
+            // used to communicate between this process and main.js
+            const { ipcRenderer } = require("electron");
+            const queryString = require("query-string");
+
+            // sets the currently selected search options
+            let searchLocation = queryString.parse(location.search)["searchLocation"];
+            let searchDate = queryString.parse(location.search)["searchDate"];
+
+            document.querySelector("input[id="+searchLocation+"]").setAttribute("checked", true);
+            document.querySelector("input[id="+searchDate+"]").setAttribute("checked", true);
+
+            // sends new options response
+            function response(){
+                let res = [];
+                res.push(document.querySelector("input[name='search-location']:checked").id);
+                res.push(document.querySelector("input[name='search-date']:checked").id);
+
+                ipcRenderer.send("search-options-response", res);               
+            }
+        </script>
+    </body>
+</html>
