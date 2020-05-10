@@ -6,8 +6,12 @@ blah blah blah todo
 
 blah blah blah more todo
 
-# Download Scrapbook n' Look
+# Download
+# Mac
 this is a paragraph
+
+# Windows
+
 
 you can download scrapbook n' look here --> [google](https://www.google.com)
 
