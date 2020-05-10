@@ -7,10 +7,10 @@ blah blah blah todo
 blah blah blah more todo
 
 # Download
-# Mac
+## Mac
 this is a paragraph
 
-# Windows
+## Windows
 
 
 you can download scrapbook n' look here --> [google](https://www.google.com)
