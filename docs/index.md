@@ -8,10 +8,8 @@ blah blah blah more todo
 
 # Download
 ### Mac
-this is a paragraph
+Mac OS users can download Scrapbook n' look [here](https://www.google.com)
 
 ### Windows
-
-
-you can download scrapbook n' look here --> [google](https://www.google.com)
+Windows users can download Scrapbook n' look [here](https://www.google.com)
 
