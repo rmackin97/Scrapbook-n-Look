@@ -17,4 +17,6 @@ You may be warned that Scrapbook n' Look does not have permission to be opened. 
 Windows users can download Scrapbook n' Look [here](https://www.google.com) <-- change link to google drive download link
 
 # Testers
-Please take the time to fill out the following google form survey <https://docs.google.com/forms/d/e/1FAIpQLSeiLN2ddlISmqLYpY7_3Ox1ekQIMERsPnypf9pppMAVNEgpNQ/viewform?vc=0&c=0&w=1>. We appreciate your feedback.
+Please take the time to fill out the following [google form surve](https://docs.google.com/forms/d/e/1FAIpQLSeiLN2ddlISmqLYpY7_3Ox1ekQIMERsPnypf9pppMAVNEgpNQ/viewform?vc=0&c=0&w=1). 
+
+We appreciate your feedback.
