@@ -4,7 +4,10 @@ blah blah blah todo
 
 # How to get started
 
-blah blah blah more todo
+To get started you must first enable the WebScrapBook extension for your preferred browser (supported by Google Chrome & Firefox). 
+
+The WebScrapBook extension can be enabled for Google Chrome users [here](https://chrome.google.com/webstore/detail/webscrapbook/oegnpmiddfljlloiklpkeelagaeejfai?hl=en) and for Firefox users it can be found [here](https://addons.mozilla.org/en-US/firefox/addon/webscrapbook/).
+
 
 # Download
 ### Mac
