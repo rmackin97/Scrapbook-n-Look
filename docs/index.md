@@ -13,4 +13,3 @@ Mac OS users can download Scrapbook n' look [here](https://www.google.com) <-- t
 
 ### Windows
 Windows users can download Scrapbook n' look [here](https://www.google.com) <-- change link to google drive download link
-
