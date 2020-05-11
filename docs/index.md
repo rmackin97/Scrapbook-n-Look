@@ -8,8 +8,7 @@ blah blah blah more todo
 
 # Download
 ### Mac
-Mac OS users can download Scrapbook n' look [here](https://www.google.com) <-- todo mac google drive download link
-[does this work?](https://drive.google.com/open?id=1oFZV2y4B5lx16CYqPFnroPFn6zeCXkMl)
+Mac OS users can download Scrapbook n' look [here](https://drive.google.com/open?id=1RZ426IoDq3GWIFfWVK5ch9H9oZxgFt9G)
 
 ### Windows
 Windows users can download Scrapbook n' look [here](https://www.google.com) <-- change link to google drive download link
