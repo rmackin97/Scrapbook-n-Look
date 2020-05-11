@@ -15,9 +15,9 @@ Mac OS users can download Scrapbook n' Look [here](https://drive.google.com/open
 You may be warned that Scrapbook n' Look does not have permission to be opened. In order to grant permission for Scrapbook n' Look to run navigate to Apple menu > System Preferences, click Security & Privacy, then click General and at the bottom select Open Anyway.
 
 ### Windows
-Windows users can download Scrapbook n' Look [here](https://www.google.com) <-- change link to google drive download link
+Windows users can download Scrapbook n' Look [here](https://drive.google.com/open?id=1Ft9_OI0iFvkLDqoZAG8ArHC83cLJWDTg)
 
 # Testers
-Please take the time to fill out the following [google form survey](https://docs.google.com/forms/d/e/1FAIpQLSeiLN2ddlISmqLYpY7_3Ox1ekQIMERsPnypf9pppMAVNEgpNQ/viewform?vc=0&c=0&w=1). 
+Please take the time to fill out the following [End-to-end Test](https://docs.google.com/forms/d/e/1FAIpQLSeiLN2ddlISmqLYpY7_3Ox1ekQIMERsPnypf9pppMAVNEgpNQ/viewform?vc=0&c=0&w=1) and [User Engagement Survey](https://docs.google.com/forms/d/e/1FAIpQLSf562NWT3UX1XImkwI90S6QZhFpmNyjHRvXWHBfsAGNf_023g/viewform?usp=sf_link).
 
 We appreciate your feedback.
