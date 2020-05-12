@@ -23,7 +23,7 @@ To capture a certain webpage, simply navigate to your desired webpage in either 
 
 After downloading your desired webpages, follow the instructions below to download Scrapbook n' Look.
 
-# Download
+# Download Scrapbook n' Look
 ### Mac
 Mac OS users can download Scrapbook n' Look [here](https://drive.google.com/open?id=1RZ426IoDq3GWIFfWVK5ch9H9oZxgFt9G)
 
@@ -32,7 +32,7 @@ You may be warned that Scrapbook n' Look does not have permission to be opened. 
 ### Windows
 Windows users can download Scrapbook n' Look [here](https://drive.google.com/open?id=1Ft9_OI0iFvkLDqoZAG8ArHC83cLJWDTg)
 
-# Testers
+# Product testing surveys
 Please take the time to fill out the following [End-to-end Test](https://docs.google.com/forms/d/e/1FAIpQLSeiLN2ddlISmqLYpY7_3Ox1ekQIMERsPnypf9pppMAVNEgpNQ/viewform?vc=0&c=0&w=1) and [User Engagement Survey](https://docs.google.com/forms/d/e/1FAIpQLSf562NWT3UX1XImkwI90S6QZhFpmNyjHRvXWHBfsAGNf_023g/viewform?usp=sf_link).
 
 We appreciate your feedback.
