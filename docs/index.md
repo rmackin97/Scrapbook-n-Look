@@ -4,7 +4,7 @@ Scrapbook n' Look is a desktop application that works with your WebScrapBook bro
 
 # What can you do with Scrapbook n' Look?
 
-Upon opening Scrapbook n' Look, you're greeted with the default menu displaying a list of the webpages you have captured with WebScrapBook on the left pane. 
+Upon opening Scrapbook n' Look, you're greeted with the default menu displaying a list of the webpages you have captured with WebScrapBook on the left pane. Your folders are listed in dark gray with your documents right under.
 
 To view a webpage that you have captured, simply click on it and it will be displayed in the right pane.
 
@@ -12,7 +12,7 @@ To search for a webpage by title, type your search query in the search bar and p
 
 To create a new folder in a directory, navigate to the directory then click on _New Folder_ and enter a name for the folder.
 
-To navigate among folders, click _Home_ to go back to your home directory, _Back_ to go to the previous directory, and double-click to enter a folder directory. 
+To navigate among folders, click _Home_ to go back to your home directory, _Back_ to go to the previous directory, and double-click a folder to enter its directory. 
 
 # Get started by adding WebScrapBook to your browser
 ### Adding the WebScrapBook extension
